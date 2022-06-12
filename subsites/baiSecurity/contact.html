@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BAI Security</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <!-- nav section -->
+    <nav class="navbar navbar-dark py-2 navbar-expand-sm fixed-top">
+        <!-- logo -->
+        <a href="index.html" class="navbar-brand">
+            <img src="./img/provided/BaiSecurityLogoCustom.png" height="36px" alt="Site Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLinks">
+            <ul class="navbar-nav navbar-dark ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link navCustom">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aboutUs.html" class="nav-link navCustom">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="invalid.html" class="nav-link navCustom">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="invalid.html" class="nav-link navCustom">Industries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="invalid.html" class="nav-link navCustom">Blog</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="contact.html" class="nav-link navCustom">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="invalid.html" class="nav-link navCustom">(847)410-8180</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of nav section -->
+
+
+    <!-- hero section -->
+    <header id="header" class="heroheadContact">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between">
+                <div class="col-sm-12 col-md-4 mx-auto text-white">
+                    <h1 class="font-weight-bold pb-3">
+                        Contact Us
+                    </h1>
+                    <p>
+                        Ready to Learn More?
+                    </p>
+                    <p>
+                        We’re here to discuss your upcoming IT security audit and compliance needs:
+                    </p>
+                    <ul>
+                        <li>
+                            CALL US at (847) 410-8180
+                        </li>
+                        <li>
+                            EMAIL US at info@baisecurity.net or fill out the Contact Form to the right
+                        </li>
+                        <li>
+                            MEET US IN CHICAGO at our central office:
+                            900 National Parkway, Suite 320, Schaumburg, IL 60137
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 mx-auto text-white">
+                    <input class="form-control my-4" type="text" placeholder="Your Name">
+                    <input class="form-control my-4" type="text" placeholder="Email">
+                    <textarea class="form-control my-4" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
+                    <a class="btn btn-secondary rounded-pill d-inline my-4" href="invalid.html">Send</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of hero section -->
+
+    <!-- footer section -->
+    <section id="FooterSection">
+        <div class="container py-3">
+            <div class="row py-3">
+                <div class="col-12 text-center">
+                    <img src="./img/provided/BaiSecurityLogoCustom.png" alt="Site Logo">
+                </div>
+            </div>
+            <div class="row py-3 d-flex justify-content-center">
+                <a href="https://www.linkedin.com/company/bai-security">
+                    <p class="circleBackground mx-3"><i class="fab fa-linkedin-in"></i></p>
+                </a>
+                <a href="https://twitter.com/bai_security">
+                    <p class="circleBackground mx-3"><i class="fab fa-twitter"></i></p>
+                </a>
+                <a href="https://www.facebook.com/BAI-Security-163797853646991/">
+                    <p class="circleBackground mx-3"><i class="fab fa-facebook-f"></i></p>
+                </a>
+            </div>
+            <div class="row pt-3">
+                <div class="col-12 text-center">
+                    <p><a href="index.html">Home</a> | <a href="aboutUs.html">About</a> | <a
+                            href="contact.html">Contact</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p><a href="invalid.html">Terms of Use</a> | <a href="invalid.html">Privacy Policy</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p style="opacity: 0.5;"><i class="far fa-copyright"></i> 2020 BAI Security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of footer section -->
+
+    <!-- jquery -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="./js/all.js"></script>
+    <!-- page specific -->
+    <script>
+        //nav scroll change
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > (window.innerHeight / 2));
+        });
+    </script>
+
+</body>
+
+</html>
